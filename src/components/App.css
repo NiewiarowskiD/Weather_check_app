@@ -1,0 +1,148 @@
+
+
+
+.App_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 695px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: rgba(0,0,0,.5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+
+}
+
+
+.Form_container{
+    width: 90%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.Input1 {
+    text-transform: uppercase;
+    width: 80%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+    text-align: center;
+}
+
+
+.Btn1 {
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #03e9f4;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    letter-spacing: 4px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.Btn1:hover{
+    font-weight: bold;
+
+}
+
+.Results_container{
+    width: 90%;
+    height: 450px;
+    color: #fff;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+sup{
+font-size: 15px;
+    color: lightgreen;
+}
+
+
+.Result{
+
+    height: 100px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+h1{
+    font-size: 16px;
+    font-weight: normal;
+
+}
+
+h2{
+    color: #03e9f4;
+    font-size: 32px;
+    font-weight: normal;
+
+}
+
+p{
+    font-size: 32px;
+    margin: 1px;
+
+}
+
+.Humidity_p{
+    color: darkturquoise;
+
+}
+
+
+.City_name{
+    width: 100%;
+    height: 30px;
+    font-size: 40px;
+    color: darkturquoise;
+    text-align: center;
+    text-transform: uppercase;
+    opacity: 60%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    margin-top: 10px;
+
+
+}
+
+.Clouds_image{
+    width: 125px;
+    height: 125px;
+    padding-bottom: -50px;
+
+}
