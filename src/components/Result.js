@@ -10,6 +10,8 @@ const Result = props => {
     const {err, date, temp_min, temp_max, temp, humidity, city, clouds} = props.weather
 
     let cloud_images = '';
+    let error_content = null;
+    let error_yes = null;
 
     if (clouds <= 25){
         cloud_images = img1;
@@ -19,6 +21,22 @@ const Result = props => {
         cloud_images = img3;
     } else cloud_images = img4;
 
+
+
+    if(!err){
+        error_content = (
+            <div className="City_and_image">
+            <p className="City_name">{city}</p>
+            <img className="Clouds_image" src={cloud_images} alt="cloudy picture" />
+            </div>
+        )
+    }
+
+    error_yes = (
+        <div className="City_and_image">
+        <h1 className="Error_message"> City {city} not found </h1>
+        </div>
+    )
 
 
     return(
@@ -51,10 +69,9 @@ const Result = props => {
                 <p className="Humidity_p">{humidity}%</p>
 
             </div>
-
-            <p className="City_name">{city}</p>
-            <img className="Clouds_image" src={cloud_images} alt="cloudy picture" />
-
+        <div>
+            {err? error_yes : error_content}
+        </div>
 
         </div>
     );

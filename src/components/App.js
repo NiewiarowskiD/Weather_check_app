@@ -9,13 +9,12 @@ const APIcode = '8dd6da1db59722aba9aea531b12b9e45'
 class App extends Component {
 
     state = {
-        value: "",
         date: '',
         city: '',
-        temp_min: '',
-        temp_max:'',
-        temp:'',
-        humidity:'',
+        temp_min: '- ',
+        temp_max:'- ',
+        temp:'- ',
+        humidity:' ',
         clouds:'',
         err: false
 
@@ -34,23 +33,21 @@ class App extends Component {
             })
             .then(response => response.json())
             .then(data => {
-                const date_current = new Date().toLocaleString()
-                this.setState({
+                this.setState(state => ({
                     err: false,
-                    date: date_current,
-                    city: data.name,
+                    city: state.value,
                     temp_min: data.main.temp_min,
                     temp_max:data.main.temp_max,
                     temp: data.main.temp,
                     humidity:data.main.humidity,
                     clouds:data.clouds.all
-                })
+                }))
             })
             .catch(err => {
-                console.log(err);
-                this.setState({
-                    err: true
-                })
+                this.setState(state => ({
+                    err: true,
+                    city: state.value
+                }))
             })
     }
 
@@ -69,7 +66,6 @@ class App extends Component {
                 <Form value={this.state.value}
                       change={this.handleInputChange}
                       submit={this.handleCitySubmit}
-
                 />
                 <Result weather={this.state}/>
             </div>

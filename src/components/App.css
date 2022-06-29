@@ -36,7 +36,7 @@
 .Input1 {
     text-transform: uppercase;
     width: 80%;
-    padding: 10px 0;
+    padding: 3px 0;
     font-size: 16px;
     color: #fff;
     border: none;
@@ -145,4 +145,20 @@ p{
     height: 125px;
     padding-bottom: -50px;
 
+}
+
+.Error_message{
+    color: #ff593b;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+
+
+}
+
+.City_and_image{
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
