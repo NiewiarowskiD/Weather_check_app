@@ -14,7 +14,7 @@ class App extends Component {
         temp_min: '- ',
         temp_max:'- ',
         temp:'- ',
-        humidity:' ',
+        humidity:'- ',
         clouds:'',
         err: false
 

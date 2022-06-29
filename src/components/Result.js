@@ -45,7 +45,7 @@ const Result = props => {
 
             <div className="Result">
                 <h1>Temperature</h1>
-                <p>{temp}<sup>&#8451;</sup></p>
+                <p className="Temp_main">{temp}<sup>&#8451;</sup></p>
 
 
             </div>

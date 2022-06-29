@@ -116,9 +116,15 @@ h2{
 p{
     font-size: 32px;
     margin: 1px;
-
 }
 
+.Temp_main{
+    font-size: 36px;
+    margin: 1px;
+    color: burlywood;
+    font-weight: bold;
+
+}
 .Humidity_p{
     color: darkturquoise;
 
@@ -157,6 +163,7 @@ p{
 
 .City_and_image{
     height: 170px;
+    margin-top: 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
