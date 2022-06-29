@@ -7,7 +7,7 @@ import img4 from "../images/cloudy-day-3.svg";
 const Result = props => {
 
 
-    const {err, date, temp_min, temp_max, temp, humidity, city, clouds} = props.weather
+    const {err, date, temp_min, pressure, temp, humidity, city, clouds} = props.weather
 
     let cloud_images = '';
     let error_content = null;
@@ -58,8 +58,8 @@ const Result = props => {
 
 
             <div className="Result">
-                <h1>Temp. max.</h1>
-                <p>{temp_max}<sup>&#8451;</sup></p>
+                <h1>Pressure</h1>
+                <p> {pressure}  hPa</p>
 
             </div>
 

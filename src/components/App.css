@@ -121,7 +121,7 @@ p{
 .Temp_main{
     font-size: 36px;
     margin: 1px;
-    color: burlywood;
+    color: #96ff58;
     font-weight: bold;
 
 }
@@ -135,10 +135,11 @@ p{
     width: 100%;
     height: 30px;
     font-size: 40px;
-    color: darkturquoise;
+    color: white;
+    letter-spacing: 2px;
     text-align: center;
     text-transform: uppercase;
-    opacity: 60%;
+    opacity: 100%;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
     margin-top: 10px;

@@ -12,7 +12,7 @@ class App extends Component {
         date: '',
         city: '',
         temp_min: '- ',
-        temp_max:'- ',
+        pressure:'- ',
         temp:'- ',
         humidity:'- ',
         clouds:'',
@@ -37,7 +37,7 @@ class App extends Component {
                     err: false,
                     city: state.value,
                     temp_min: data.main.temp_min,
-                    temp_max:data.main.temp_max,
+                    pressure: data.main.pressure,
                     temp: data.main.temp,
                     humidity:data.main.humidity,
                     clouds:data.clouds.all
